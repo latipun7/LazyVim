@@ -1,5 +1,65 @@
 # Changelog
 
+## [12.22.1](https://github.com/LazyVim/LazyVim/compare/v12.22.0...v12.22.1) (2024-06-30)
+
+
+### Performance Improvements
+
+* **markdown:** only run markdownlint-cli2 formatter when there are markdownlint diagnostics for the buffer ([8a6875a](https://github.com/LazyVim/LazyVim/commit/8a6875ab3bc79d5890cf0a65e3ef602c1567fa90))
+
+
+### Reverts
+
+* feat(neo-tree): more sane defaults for gitignore and hidden files ([2bfcd05](https://github.com/LazyVim/LazyVim/commit/2bfcd05c621f74b4d735b14b43804a901f17d416))
+
+## [12.22.0](https://github.com/LazyVim/LazyVim/compare/v12.21.1...v12.22.0) (2024-06-30)
+
+
+### Features
+
+* allow a custom path for `lazyvim.json`. Fixes [#3856](https://github.com/LazyVim/LazyVim/issues/3856) ([131187c](https://github.com/LazyVim/LazyVim/commit/131187c092cc42768e0a48a3668e91d009a213a0))
+* **cmp:** disable `item.menu` for Rust filetypes ([#3858](https://github.com/LazyVim/LazyVim/issues/3858)) ([ee44b21](https://github.com/LazyVim/LazyVim/commit/ee44b2189827e6a34530ad8b55f214a0a809c045))
+* **neo-tree:** more sane defaults for gitignore and hidden files ([85405d6](https://github.com/LazyVim/LazyVim/commit/85405d65348cac72343d081a81addfb5c8d43743))
+
+
+### Bug Fixes
+
+* **lsp:** prevent setting up mason-lspconfig more than once when setting mslp opts ([8c900f9](https://github.com/LazyVim/LazyVim/commit/8c900f92e735e9c7e9af24b97de740390383a137))
+
+## [12.21.1](https://github.com/LazyVim/LazyVim/compare/v12.21.0...v12.21.1) (2024-06-29)
+
+
+### Bug Fixes
+
+* **git:** use current dir when git not found to get a meaningful error message ([b43ace1](https://github.com/LazyVim/LazyVim/commit/b43ace1ecfbeb87626fbde8973a2717247471b2e))
+
+
+### Performance Improvements
+
+* **markdown:** don't format with markdown-toc when no toc in the doc ([73e72ee](https://github.com/LazyVim/LazyVim/commit/73e72ee21d7673e4040bb99f4de834410219d6cb))
+
+## [12.21.0](https://github.com/LazyVim/LazyVim/compare/v12.20.1...v12.21.0) (2024-06-29)
+
+
+### Features
+
+* **extras:** add `overseer.nvim` plugin extra ([#2421](https://github.com/LazyVim/LazyVim/issues/2421)) ([683bf52](https://github.com/LazyVim/LazyVim/commit/683bf52c024306f9c0fccc2b02348692c3f09bfa))
+* **extras:** add chezmoi extra ([#2859](https://github.com/LazyVim/LazyVim/issues/2859)) ([88f2541](https://github.com/LazyVim/LazyVim/commit/88f25410e020fe64fe42a94d71f0be3db1b918b4))
+* **extras:** switch to markdownlint-cli2 ([#3843](https://github.com/LazyVim/LazyVim/issues/3843)) ([f47d105](https://github.com/LazyVim/LazyVim/commit/f47d105b80dce615a572a13351a137653444d548))
+* **java:** enable Lombok support in jdtls ([#3852](https://github.com/LazyVim/LazyVim/issues/3852)) ([0fede40](https://github.com/LazyVim/LazyVim/commit/0fede4040b15da7e74c6a741132ff3d48634c1ad))
+
+
+### Bug Fixes
+
+* **bufremove:** fix `Cancel` ([#3834](https://github.com/LazyVim/LazyVim/issues/3834)) ([87fe403](https://github.com/LazyVim/LazyVim/commit/87fe403df62fd8b89b886920c4f562da8e162cbe))
+* **edgy:** improve edgy.lua bufferline offset logic ([#3794](https://github.com/LazyVim/LazyVim/issues/3794)) ([566753b](https://github.com/LazyVim/LazyVim/commit/566753b8889a6132f2e667606a6a002fdd8847b1))
+* **extras:** don't load pkgs when parsing specs for LazyExtras ([3764735](https://github.com/LazyVim/LazyVim/commit/3764735fb20596dfc9cd0707d2830a40004c7f0e))
+* **gitsigns:** fix inconsistent signs ([#3830](https://github.com/LazyVim/LazyVim/issues/3830)) ([44ed11c](https://github.com/LazyVim/LazyVim/commit/44ed11c4f8867cdc887fdcba6a22938125a403ee))
+* **lazygit:** fix browsing private git hostings ([#3833](https://github.com/LazyVim/LazyVim/issues/3833)) ([b292a72](https://github.com/LazyVim/LazyVim/commit/b292a721bfce1b079428a3a42aa9ea3454c5692d))
+* **lint:** make prepend_args opt work when default args is empty ([#3828](https://github.com/LazyVim/LazyVim/issues/3828)) ([ff1b44e](https://github.com/LazyVim/LazyVim/commit/ff1b44e67606080b8b40d066943c55c92856e3c6))
+* **neotest:** support adapter key on adapter for playwright ([#3824](https://github.com/LazyVim/LazyVim/issues/3824)) ([e5e8d7a](https://github.com/LazyVim/LazyVim/commit/e5e8d7a8056a8c80456751385e73a4b184bcd436))
+* **pick:** set recurse_submodules to false when using `auto` picker. Fixes [#3831](https://github.com/LazyVim/LazyVim/issues/3831), Closes [#3835](https://github.com/LazyVim/LazyVim/issues/3835) ([d6429a5](https://github.com/LazyVim/LazyVim/commit/d6429a5c8ad317057cb852d3cd67ce52e9c30727))
+
 ## [12.20.1](https://github.com/LazyVim/LazyVim/compare/v12.20.0...v12.20.1) (2024-06-26)
 
 

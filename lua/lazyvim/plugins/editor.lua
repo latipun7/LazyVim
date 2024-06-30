@@ -3,7 +3,6 @@ return {
   -- file explorer
   {
     "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
     cmd = "Neotree",
     keys = {
       {
@@ -206,6 +205,13 @@ return {
         topdelete = { text = "" },
         changedelete = { text = "▎" },
         untracked = { text = "▎" },
+      },
+      signs_staged = {
+        add = { text = "▎" },
+        change = { text = "▎" },
+        delete = { text = "" },
+        topdelete = { text = "" },
+        changedelete = { text = "▎" },
       },
       on_attach = function(buffer)
         local gs = package.loaded.gitsigns
